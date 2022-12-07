@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Head>
-        <title>Corps - Cops Kissing Each Other</title>
+        <title>HELM - Cops Kissing Each Other</title>
         <meta name="content" content="game info" />
         {/*<link rel="icon" href="/favicon.ico" />*/}
       </Head>
