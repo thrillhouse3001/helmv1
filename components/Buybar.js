@@ -44,13 +44,13 @@ const App = () => {
 
   return (
     <>
-      <div className="grid overflow-hidden grid-cols-8 grid-rows-1 gap-0 w-[735px] bg-neutral-900 border border-purple-500 rounded-lg p-[3px] pt-[8px] pr-[8px]">
-        <div className="box col-start-1 col-end-5">
+      <div className="grid overflow-hidden grid-cols-9 grid-rows-1 gap-0 w-[735px] bg-neutral-900 border border-purple-500 rounded-lg p-[3px] pt-[8px] pr-[8px]">
+        <div className="box col-start-1 col-end-6">
           <div className="pt-[3px] pl-[12px] font-sans font-light text-2xl text-white">
             Cops Kissing Each Other
           </div>
         </div>
-        <div className="box col-start-5 col-end-6 pb-[5px] pl-10">
+        <div className="box col-start-6 col-end-7 pb-[5px] pl-10">
           <Image
             src={windowsLogo}
             className="pb-1 text-white"
@@ -59,24 +59,26 @@ const App = () => {
             alt="/"
           />{" "}
         </div>
-        <div className="box col-start-6 col-end-9">
-          <div className="flex items-center space-x-3 rounded-full bg-neutral-800 p-2 pl-[15px]">
-            {" "}
-            <Image
-              src={solLogo}
-              className=""
-              height={24}
-              width={24}
-              alt="/"
-            />{" "}
-            <text className="font-sans font-bold text-white text-1xl text-center">
-              1.50
-            </text>
-            <main>
-              {publicKey
-                ? renderItemBuyContainer()
-                : renderNotConnectedContainer()}
-            </main>
+        <div className="box col-start-7 col-end-10">
+          <div className="pl-6">
+            <div className="flex items-center space-x-3 rounded-full bg-neutral-800 p-2">
+              {" "}
+              <Image
+                src={solLogo}
+                className=""
+                height={20}
+                width={20}
+                alt="/"
+              />{" "}
+              <text className="font-sans font-bold text-white text-1xl text-center">
+                1.50
+              </text>
+              <div>
+                {publicKey
+                  ? renderItemBuyContainer()
+                  : renderNotConnectedContainer()}
+              </div>
+            </div>
           </div>
         </div>
       </div>

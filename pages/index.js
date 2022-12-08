@@ -1,6 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Buybar from "../components/Buybar";
+import Navbar from "../components/Navbar";
+import Title from "../components/Title";
+import Images from "../components/Images";
+import About from "../components/About";
 
 const App = () => {
   // This will fetch the users' public key (wallet address) from any wallet we support
@@ -11,9 +15,23 @@ const App = () => {
         <meta name="content" content="game info" />
         {/*<link rel="icon" href="/favicon.ico" />*/}
       </Head>
+      <div className="place-content-center">
+        {/* <Walletnavbar /> */}
+        <Navbar />
+      </div>
 
+      <div className="w-full h-[80px]"></div>
+      <div>
+        <Title />
+      </div>
+      <div>
+        <Images />
+      </div>
       <div>
         <Buybar />
+      </div>
+      <div>
+        <About />
       </div>
     </div>
   );
