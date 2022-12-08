@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import { Keypair, Transaction } from "@solana/web3.js";
 import { findReference, FindReferenceError } from "@solana/pay";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { InfinitySpin } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 import IPFSDownload from "./IpfsDownload";
 import { addOrder, hasPurchased, fetchItem } from "../lib/api";
 
@@ -118,15 +118,21 @@ export default function Buy({ itemID }) {
   if (!publicKey) {
     return (
       <div>
-        <button className="w-[80px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center ">
-          Connect Wallet
+        <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center ">
+          Connect
         </button>
       </div>
     );
   }
 
   if (loading) {
-    return <InfinitySpin color="gray" />;
+    return (
+      <>
+        <div className="pt-[2px] w-[124px] h-[24px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center">
+          Purchasing...
+        </div>
+      </>
+    );
   }
 
   return (
@@ -137,10 +143,10 @@ export default function Buy({ itemID }) {
       ) : (
         <button
           disabled={loading}
-          className="w-[80px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center "
+          className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center "
           onClick={processTransaction}
         >
-          Buy Game
+          Purchase Now
         </button>
       )}
     </div>
