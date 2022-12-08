@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 import Title from "../components/Title";
 import Images from "../components/Images";
 import About from "../components/About";
+import Download from "../components/Download";
+import Holder from "../components/Holder";
+import Gamenotes from "../components/Gamenotes.js";
 
 const App = () => {
   // This will fetch the users' public key (wallet address) from any wallet we support
@@ -32,6 +35,15 @@ const App = () => {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <Download />
+      </div>
+      <div>
+        <Holder />
+      </div>
+      <div>
+        <Gamenotes />
       </div>
     </div>
   );
