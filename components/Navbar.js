@@ -23,6 +23,9 @@ const Navbar = () => {
 
   const renderConnectedContainer = () => (
     <div className="flex top-0 right-[10px] py-[9px]">
+      <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-slate-400 text-center cursor-not-allowed">
+        Create Project
+      </button>
       <Image src={profileIconGreen} className="" alt="/" />
       <p className="w-[145px] h-[30px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded font-sans font-thin text-sm text-white text-center uppercase py-[5px]">
         {publicKeyString.toString().substring(0, 12) + "..."}
@@ -32,6 +35,9 @@ const Navbar = () => {
 
   const renderNotConnectedContainer = () => (
     <div className="flex top-0 right-[10px] py-[9px]">
+      <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-slate-400 text-center cursor-not-allowed">
+        Create Project
+      </button>
       <Image src={profileIconRed} className="" alt="/" />
       <WalletMultiButton className="w-[145px] h-[30px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 font-sans font-thin text-sm text-white uppercase" />
     </div>
