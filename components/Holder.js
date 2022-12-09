@@ -12,7 +12,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { Connection, PublicKey } from "@solana/web3.js";
 import { Metaplex } from "@metaplex-foundation/js";
 
-//Connected
+//Connect
 const connection = new Connection("https://api.metaplex.solana.com/");
 const mx = Metaplex.make(connection);
 
@@ -116,6 +116,19 @@ const Holder = () => {
         <div className="text-white font-sans font-thin text-xs text-center rounded-full bg-neutral-800 pb-[4px] h-[20px] w-[140px] border border-purple-500">
           {address ? "connected" : "unconnected"}
           {holder ? " + holder" : address ? " + nonholder" : ""}
+        </div>
+      </div>
+      <div className="grid justify-items-center grid-cols-1 grid-rows-1 pt-[14px] pb-[6px]">
+        <div>
+          {holder ? (
+            <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center ">
+              Collect Revenue
+            </button>
+          ) : (
+            <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-slate-400 text-center cursor-not-allowed">
+              Collect Revenue
+            </button>
+          )}
         </div>
       </div>
     </div>

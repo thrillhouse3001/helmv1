@@ -12,23 +12,25 @@ import { clusterApiUrl, Connection, PublicKey } from "@solana/web3.js";
 const Download = () => {
   const renderNotConnectedContainer = () => (
     <>
-      <div>
-        <div>
-          <Demobutton
-            demohash="QmapHivzpzxvKfeu93JcmH9md73gXsJuVsr4o11zUPsM78"
-            demofile="demo"
-          />
+      <div className="pl-[20px]">
+        <div className="w-[142px] rounded-full bg-neutral-800 p-[9px]">
+          <div className="pl-[2px]">
+            <Demobutton
+              demohash="QmapHivzpzxvKfeu93JcmH9md73gXsJuVsr4o11zUPsM78"
+              demofile="demo"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
+      <div className="text-white text-center font-sans font-thin text-xs pt-[6px]">
         -downloadable .zip file-
       </div>
     </>
   );
 
   return (
-    <div className="bg-neutral-900 border border-purple-500 rounded-lg p-3 pt-4">
+    <div className="bg-neutral-900 border border-purple-500 rounded-lg p-3 pt-[8px]">
       <main>{renderNotConnectedContainer()}</main>
     </div>
   );
