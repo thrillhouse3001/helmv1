@@ -23,7 +23,7 @@ const App = () => {
         <Navbar />
       </div>
 
-      <div className="w-full h-[80px]"></div>
+      <div className="w-full h-[95px]"></div>
 
       <div className="flex justify-center">
         <div className="bg-black border border-pink-500 rounded-lg max-w-5xl h-auto justify-items-center p-[30px]">
