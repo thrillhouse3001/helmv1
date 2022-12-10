@@ -6,6 +6,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import Image from "next/image";
 import profileIconRed from "../public/images/profileiconRED.svg";
 import profileIconGreen from "../public/images/profileiconGREEN.svg";
+import helmNavBarLogo from "../public/images/helm.svg";
 
 // Constants
 
@@ -45,14 +46,20 @@ const Navbar = () => {
 
   return (
     <div>
-      <div class="grid overflow-hidden grid-cols-8 grid-rows-1 gap-0 w-full h-[50px] shadow-xl z-[100] fixed bg-neutral-900 border-b border-purple-500 text-white">
-        <div class="box col-start-1 col-end-2 justify-self-center">
-          <Image src={profileIconGreen} className="" alt="/" />
+      <div class="grid overflow-hidden grid-cols-12 grid-rows-1 gap-0 w-full h-[60px] shadow-xl z-[100] fixed bg-neutral-900 border-b border-purple-500 text-white">
+        <div class="box col-start-1 col-end-2 justify-self-start pt-[4px] px-3">
+          <Image
+            src={helmNavBarLogo}
+            width={112}
+            height={50}
+            className=""
+            alt="/"
+          />
         </div>
-        <div class="box col-start-2 col-end-6">
+        <div class="box col-start-2 col-end-12 pt-4">
           Marketplace Creators My Projects Support
         </div>
-        <div class="box col-start-6 col-end-9 justify-self-end">
+        <div class="box col-start-12 col-end-16 justify-self-end">
           {publicKey
             ? renderConnectedContainer()
             : renderNotConnectedContainer()}
