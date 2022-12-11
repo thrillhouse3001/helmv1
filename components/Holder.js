@@ -67,7 +67,7 @@ const Holder = () => {
   };
 
   return (
-    <div className="bg-neutral-900 border border-purple-500 rounded-lg px-4 pt-[4px] pb-[10px] space-y-0">
+    <div className="bg-neutral-900 border border-purple-800 rounded-lg px-4 pt-[4px] pb-[10px] space-y-0">
       <h1 className="text-white font-sans font-semibold text-lg text-center">
         Lost Boy Club
       </h1>
@@ -113,19 +113,20 @@ const Holder = () => {
       </div>
 
       <div className="grid justify-items-center grid-cols-1 grid-rows-1 ">
-        <div className="text-white font-sans font-thin text-xs text-center rounded-full bg-neutral-800 pb-[4px] h-[20px] w-[140px] border border-purple-500">
+        <div className="text-white font-sans font-thin text-xs text-center rounded-full bg-neutral-900 pb-[4px] h-[20px] w-[140px] border border-purple-700">
           {address ? "connected" : "unconnected"}
           {holder ? " + holder" : address ? " + nonholder" : ""}
         </div>
       </div>
+
       <div className="grid justify-items-center grid-cols-1 grid-rows-1 pt-[14px] pb-[6px]">
-        <div>
+        <div className="w-[148px] rounded-full bg-neutral-800 p-[9px]">
           {holder ? (
-            <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center ">
+            <button className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 hover:from-purple-300 hover:via-purple-300 hover:to-purple-300   rounded-full font-sans font-semibold text-sm text-purple-300 text-center hover:text-neutral-800 ">
               Collect Revenue
             </button>
           ) : (
-            <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-slate-400 text-center cursor-not-allowed">
+            <button className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 rounded-full font-sans font-semibold text-sm text-purple-300 text-center cursor-not-allowed">
               Collect Revenue
             </button>
           )}

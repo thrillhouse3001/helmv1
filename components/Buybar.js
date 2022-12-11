@@ -26,9 +26,8 @@ const App = () => {
   const renderNotConnectedContainer = () => (
     <>
       {/* NEW */}
-      <div>
-        <WalletMultiButton className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center " />
-      </div>
+
+      <WalletMultiButton className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 hover:from-purple-300 hover:via-purple-300 hover:to-purple-300 rounded-full font-sans font-semibold text-sm  text-purple-300 hover:text-neutral-800" />
     </>
   );
 
@@ -44,7 +43,7 @@ const App = () => {
 
   return (
     <>
-      <div className="grid overflow-hidden grid-cols-9 grid-rows-1 gap-0 w-[735px] bg-neutral-900 border border-purple-500 rounded-lg p-[3px] pt-[8px] pr-[8px]">
+      <div className="grid overflow-hidden grid-cols-9 grid-rows-1 gap-0 w-[735px] bg-neutral-900 border border-purple-800 rounded-lg p-[3px] pt-[8px] pr-[8px]">
         <div className="box col-start-1 col-end-6">
           <div className="pt-[3px] pl-[12px] font-sans font-light text-2xl text-white">
             Cops Kissing Each Other

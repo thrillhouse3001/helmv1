@@ -8,7 +8,7 @@ const Demobutton = ({ demohash, demofile }) => {
     <div>
       {file ? (
         <div>
-          <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center ">
+          <button className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 hover:from-purple-300 hover:via-purple-300 hover:to-purple-300 rounded-full font-sans font-semibold text-sm  text-purple-300 hover:text-neutral-800  ">
             <a href={file} download="demo">
               Download Demo
             </a>
@@ -16,7 +16,7 @@ const Demobutton = ({ demohash, demofile }) => {
         </div>
       ) : (
         <button
-          className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center "
+          className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 hover:from-purple-300 hover:via-purple-300 hover:to-purple-300 rounded-full font-sans font-semibold text-sm  text-purple-300 hover:text-neutral-800 "
           disabled
         >
           Downloading...

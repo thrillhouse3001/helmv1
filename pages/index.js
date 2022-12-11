@@ -50,7 +50,7 @@ const App = () => {
         </div>
       </div>
       <div className="w-full h-[50px]"></div>
-      <div className=" text-white text-center font-sans font-thin text-xs w-full h-[30px] bg-neutral-900 border-t border-purple-500 pt-[6px]">
+      <div className=" text-purple-300 text-center font-sans font-thin text-xs w-full h-[30px] bg-neutral-900 border-t border-purple-800 pt-[6px]">
         <a href="https://twitter.com/W3Kasper">Made by @W3Kasper</a>
       </div>
     </div>

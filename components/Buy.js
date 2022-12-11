@@ -118,7 +118,7 @@ export default function Buy({ itemID }) {
   if (!publicKey) {
     return (
       <div>
-        <button className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center ">
+        <button className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 hover:from-purple-300 hover:via-purple-300 hover:to-purple-300 rounded-full font-sans font-semibold text-sm  text-purple-300 hover:text-neutral-800">
           Connect
         </button>
       </div>
@@ -128,7 +128,7 @@ export default function Buy({ itemID }) {
   if (loading) {
     return (
       <>
-        <div className="pt-[2px] w-[124px] h-[24px] bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center">
+        <div className=" pl-6 pt-[2px] w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800  rounded-full font-sans font-semibold text-sm  text-purple-300 ">
           Purchasing...
         </div>
       </>
@@ -143,7 +143,7 @@ export default function Buy({ itemID }) {
       ) : (
         <button
           disabled={loading}
-          className="w-[124px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center "
+          className="w-[130px] h-[24px] bg-gradient-to-r from-purple-800 via-purple-800 to-purple-800 hover:from-purple-300 hover:via-purple-300 hover:to-purple-300 rounded-full font-sans font-semibold text-sm  text-purple-300 hover:text-neutral-800"
           onClick={processTransaction}
         >
           Purchase Now

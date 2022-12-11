@@ -9,7 +9,7 @@ import { RiGamepadLine } from "react-icons/ri";
 
 const Download = () => {
   return (
-    <div className="bg-neutral-900 border border-purple-500 rounded-lg pt-4 pb-3 px-4 space-y-0 text-white">
+    <div className="bg-neutral-900 border border-purple-800 rounded-lg pt-4 pb-3 px-4 space-y-0 text-white">
       <div className="grid overflow-hidden grid-cols-7 grid-rows-1">
         <div className="box col-start-1 col-end-1">
           <BsPersonCircle className="text-base" />
