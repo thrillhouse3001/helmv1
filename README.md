@@ -2,7 +2,7 @@
 
 Still in beta and runs on devnet for phantom. Hit me up if you got any questions on twitter @w3Kasper
 
-link: 
+link: https://helmv1-thrillhouse3001.vercel.app/
 
 //////
 To get started with this project, clone this repo and follow these commands:
