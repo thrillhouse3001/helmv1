@@ -24,13 +24,13 @@ const Navbar = () => {
 
   const renderConnectedContainer = () => (
     <>
-      <div class="flex justify-between pl-8 pt-[16px]">
-        <div class="item ">
+      <div className="flex justify-between pl-8 pt-[16px]">
+        <div className="item ">
           <div className="rounded-full bg-neutral-800 p-[4px] px-[24px] text-center font-sans font-semibold text-md text-purple-300 hover:bg-purple-800">
             + Create Project
           </div>
         </div>
-        <div class="item">
+        <div className="item">
           <Image
             src={profileIconGreen}
             height={35}
@@ -39,7 +39,7 @@ const Navbar = () => {
             alt="/"
           />
         </div>
-        <div class="item ">
+        <div className="item ">
           <p className="h-[30px] rounded-md p-[4px] px-4 font-sans font-semibold text-md text-center  bg-purple-800 text-purple-300 ">
             {publicKeyString.toString().substring(0, 10) + "..."}
           </p>
@@ -49,13 +49,13 @@ const Navbar = () => {
   );
 
   const renderNotConnectedContainer = () => (
-    <div class="flex justify-between pl-8 pt-[16px]">
-      <div class="item ">
+    <div className="flex justify-between pl-8 pt-[16px]">
+      <div className="item ">
         <button className="rounded-full bg-neutral-800 p-[4px] px-[24px] text-center font-sans font-semibold text-md text-purple-300 hover:bg-purple-800 ">
           + Create Project
         </button>
       </div>
-      <div class="item">
+      <div className="item">
         <Image
           src={profileIconRed}
           height={35}
@@ -64,7 +64,7 @@ const Navbar = () => {
           alt="/"
         />
       </div>
-      <div class="item ">
+      <div className="item ">
         <WalletMultiButton className="h-[30px] rounded-md bg-purple-300 p-[4px] px-4 font-sans font-semibold text-md text-center text-neutral-900 hover:bg-purple-800 hover:text-purple-300 " />
       </div>
     </div>
@@ -92,12 +92,12 @@ const Navbar = () => {
               </div>
               <div className="box pt-[16px]">
                 <div className="rounded-full bg-neutral-800 p-[4px] text-center font-sans font-semibold text-md text-purple-300  hover:bg-purple-800">
-                  Creators
+                  Publishers
                 </div>
               </div>
               <div className="box pt-[16px]">
                 <div className="rounded-full bg-neutral-800 p-[4px] text-center font-sans font-semibold text-md text-purple-300 hover:bg-purple-800">
-                  About
+                  Funding
                 </div>
               </div>
             </div>

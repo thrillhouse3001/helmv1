@@ -7,8 +7,6 @@ export default function Product({ product }) {
 
   return (
     <div>
-      {/* Replace the IPFS component with the Buy component! */}
-
       <Buy itemID={id} />
     </div>
   );
