@@ -39,8 +39,8 @@ const Navbar = () => {
             alt="/"
           />
         </div>
-        <div className="item ">
-          <p className="h-[30px] rounded-md p-[4px] px-4 font-sans font-semibold text-md text-center  bg-purple-800 text-purple-300 ">
+        <div className="item pt-[1px]">
+          <p className="h-[30px] rounded-md p-[4px]  px-4 font-sans font-semibold text-md text-center  bg-purple-800 text-purple-300 ">
             {publicKeyString.toString().substring(0, 10) + "..."}
           </p>
         </div>
